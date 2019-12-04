@@ -1,0 +1,68 @@
+/**
+ * Word Search Engine - Application
+ *
+ * @category   Application_Frontend
+ * @package    word-search-engine
+ * @author     Suman Barua
+ * @developer  Suman Barua <sumanbarua576@gmail.com>
+ **/
+
+body {
+  margin: 0;
+  padding-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+div.word-info > ul > li {
+  font-weight: bold;
+}
+
+/* spinner loader start */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* spinner loader end */
